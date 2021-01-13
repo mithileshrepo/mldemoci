@@ -8,7 +8,7 @@ WORKDIR MICRO_SERVICE
 # install dependencies
 RUN pip install --upgrade pip
 # copy project
-COPY src/ ./MICRO_SERVICE
+COPY . MICRO_SERVICE
 RUN pip install -r requirements.txt
 EXPOSE 5000
 CMD python app.py
